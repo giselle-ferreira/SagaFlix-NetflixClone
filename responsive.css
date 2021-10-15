@@ -25,33 +25,28 @@
     margin-left: 0;
   }
 
-   /*-------- Video Container  --------*/
-  .video-container {
-    top: 100px;
+  /*-------- Gif Container  --------*/
+  .gif-container {
+    top: 120px;
+  }
+
+  .gif-container img {
     width: 100vw;
+    height: auto;
   }
 
-  /*-------- Volume Slider  --------*/
-  .slider {
-    position: relative;
-    top: 20px;
-  }
-
-  .slider input[type="range"] {
-    width: 40px;
-  }
-
-  .title {
-    margin-top: 12%;
-    font-size: 26px;
-  }
-  
-  /*-------- Video  --------*/
+   /*-------- Gif  --------*/
   .main-movie .description {
     display: none;
   }
 
   /*-------- Buttons  --------*/
+
+  .title {
+    margin-top: 120px;
+    font-size: 25px;
+  }
+
   .button {
     padding: 6px;
     margin-top: 15px;
@@ -102,7 +97,7 @@
   }
 
   .dev h5 {
-    font-size: 12px;
+    font-size: 11px;
   }
   
 }

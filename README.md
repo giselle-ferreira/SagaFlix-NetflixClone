@@ -12,10 +12,6 @@
 
 <br>
 
->## Additions 💻
-+ Video to the main page
-+ Video volume control
-
 <br>
 
 >## Website 💻

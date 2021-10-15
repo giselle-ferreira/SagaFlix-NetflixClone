@@ -20,8 +20,8 @@
     />
 
     <!-- Owl Carousel -->
-    <link rel="stylesheet" href="/owl-css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="/owl-css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="owl-css/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl-css/owl.theme.default.min.css">  
 
     <title>SagaFlix</title>
   </head>
@@ -48,27 +48,14 @@
     <main>
       <div class="main-movie">
         <div class="container">
-          <video class="video-container" id="video" autoplay loop>
-            <source
-              src="assets/video/ascensao-skywalker.mp4"
-              type="video/mp4"
-            />
-          </video>
-
-          <!-- Volume Control-->
-            <div class="slider">
-              <li><i class="fas fa-volume-up"></i><input id="volume" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input></li>
-              </ul>
-            </div>  
-          <ul>
+          <div class="gif-container">
+            <img src="assets/video/lordvader2.gif">
+          </div>
 
           <!-- Movie Title and Description -->
-          <h3 class="title">A ASCENSÃO SKYWALKER</h3>
+          <h3 class="title">LORD VADER</h3>
           <p class="description">
-            Com o retorno do Imperador Palpatine, a Resistência toma a frente da
-            batalha. Treinando para ser uma completa Jedi, Rey se encontra em
-            conflito com passado e futuro, e teme pelas respostas que pode
-            conseguir com Kylo Ren.
+            O jovem Anakin Skywalker sucumbe ao lado negro da Força e se transforma em Darth Vader, que com sua armadura preta se torna o Jedi mais poderoso e temido das Galáxias.
           </p>
 
           <!-- Buttons -->
@@ -304,11 +291,11 @@
 
         <div class="dev">
           <h5>
-            Desenvolvido por Giselle Ferreira para o Bootcamp da Digital Innovation One.
-            <a href="https://github.com/giselle-ferreira" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
+            Desenvolvido por Giselle Ferreira.
+            <a href="https://github.com/giselle-ferreira" target="_blank"><i class="fab fa-github"></i></a>
           </h5>
+          <h5>Bootcamp da Digital Innovation One.</h5>
+          <h5>Vídeo "Lord Vader" produzido por TeaserPRO Team. <a href="https://www.youtube.com/watch?v=k21ONzrwVLY&t=1s" target="_blank"><i class="fab fa-youtube"></i></h5>
         </div>
       </footer>
     </div>
@@ -321,7 +308,5 @@
     <script src="owl-js/owl.carousel.min.js"></script>
     <script src="owl-js/setup.js"></script>
 
-    <!-- Video Volume -->
-    <script src="volume.js"></script>
   </body>
 </html>

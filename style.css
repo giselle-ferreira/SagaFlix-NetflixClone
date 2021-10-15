@@ -13,7 +13,7 @@
 
 /*------- Body --------*/
 body {
-  background: var(--preta);
+  background: #000;
   font-family: 'Arial', Times, serif;
   color: white;
 }
@@ -27,6 +27,7 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-top: 10px;
 }
 
 /*------- Logo --------*/
@@ -60,61 +61,8 @@ header nav a:hover {
   color: #AAA;
 }
 
-/*------- Main movie --------*/
-.main-movie .container {
-  width: 60%;
-}
-
-/*------- Volume Slider --------*/
-.main-movie li {
-  list-style: none;
-}
-
-.slider {
-  position: relative;
-  top: 100px;
-}
-
-.slider i {
-  margin-right: 10px;
-  color: #cecece;
-}
-
-.slider input[type="range"] {
-  -webkit-appearance: none !important;
-  margin: 0;
-  padding: 0;
-  background: #cecece;
-  width: 90px;
-  height: 13px;
-  border-bottom: none;
-  box-shadow: 2px 2px 2px #555555;
-  border-radius: 5px;
- }
-
- .slider input[type="range"]::-ms-fill-lower {
-  background: #cecece;
- }
- 
- .slider input[type="range"]::-ms-fill-upper {
-  background: #cecece;
- }
-
- .slider input[type="range"]::-moz-range-track {
-  background: #cecece;
-  border: none;
- }
-
- .slider input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none !important;
-  background: radial-gradient(#fff, #333);
-  height: 11px;
-  width: 11px;
-  border-radius: 100%;
-  cursor: pointer;
- } 
-
-.video-container {
+ /*------- Gif Container --------*/
+.gif-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -127,7 +75,7 @@ header nav a:hover {
 
 .title {
   margin-top: 15%;
-  font-size: 35px;
+  font-size: 40px;
   font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
@@ -135,7 +83,7 @@ header nav a:hover {
   margin-top: 10px;
   margin-bottom: 40px;
   line-height: 20px;
-  width: 60%;
+  width: 30%;
 }
 
 /*------- Buttons --------*/
@@ -191,7 +139,7 @@ header nav a:hover {
 }
 
 .movie-carousel {
-  margin-top: 200px;
+  margin-top: 250px;
   margin-left: 50px;
 }
 
@@ -282,17 +230,25 @@ header nav a:hover {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 15px;
   color: #aaa;
+  line-height: 18px;
 }
 
 .dev a {
   cursor: pointer;
   text-decoration: none;
   color: #aaa;
-  font-size: 22px;
+  font-size: 15px;
+  
 }
 
 .dev a:hover {
   color: #fff;
 }
+
+.dev h5 i {
+  font-size: 16px;
+}
+
+
