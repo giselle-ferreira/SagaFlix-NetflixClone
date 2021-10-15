@@ -1,0 +1,298 @@
+/*------- Root -------*/
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+/*------- Reset --------*/
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/*------- Body --------*/
+body {
+  background: var(--preta);
+  font-family: 'Arial', Times, serif;
+  color: white;
+}
+
+.container {
+  margin-left: 30px;
+}
+
+/*------- Header --------*/
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/*------- Logo --------*/
+
+header {
+  height: 60px;
+  display: flex;
+}
+
+header .logo img {
+  width: 140px;
+  cursor: pointer;
+}
+
+/*------- Nav --------*/
+
+header nav {
+  margin-left: 50px;
+}
+
+header nav a {
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px;
+  transition: 0.5s ease all;
+}
+
+header nav a:hover {
+  color: #AAA;
+}
+
+/*------- Main movie --------*/
+.main-movie .container {
+  width: 60%;
+}
+
+/*------- Volume Slider --------*/
+.main-movie li {
+  list-style: none;
+}
+
+.slider {
+  position: relative;
+  top: 100px;
+}
+
+.slider i {
+  margin-right: 10px;
+  color: #cecece;
+}
+
+.slider input[type="range"] {
+  -webkit-appearance: none !important;
+  margin: 0;
+  padding: 0;
+  background: #cecece;
+  width: 90px;
+  height: 13px;
+  border-bottom: none;
+  box-shadow: 2px 2px 2px #555555;
+  border-radius: 5px;
+ }
+
+ .slider input[type="range"]::-ms-fill-lower {
+  background: #cecece;
+ }
+ 
+ .slider input[type="range"]::-ms-fill-upper {
+  background: #cecece;
+ }
+
+ .slider input[type="range"]::-moz-range-track {
+  background: #cecece;
+  border: none;
+ }
+
+ .slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background: radial-gradient(#fff, #333);
+  height: 11px;
+  width: 11px;
+  border-radius: 100%;
+  cursor: pointer;
+ } 
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1366px;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+  z-index: -2;
+}
+
+.title {
+  margin-top: 15%;
+  font-size: 35px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.main-movie .description {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  line-height: 20px;
+  width: 60%;
+}
+
+/*------- Buttons --------*/
+
+.watch-mob, .info-mob {
+  display: none;
+}
+
+.button {
+  border: none;
+  color: #fff;
+  padding: 12px;
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3 ease all;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.watch {
+  background: #fff;
+  color: #000;
+  width: 130px;
+}
+
+.info {
+  background-color: rgba(169,169,169,0.5);
+  width: 190px;
+}
+
+.watch:hover {
+  background-color: #cecece;
+}
+
+.info:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.button i {
+  margin-right: 8px;
+}
+
+/*------- Movie Carousel --------*/
+.movie-box {
+  height: 350px;
+  width: auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 5px;   
+  object-fit: fit;
+}
+
+.movie-carousel {
+  margin-top: 200px;
+  margin-left: 50px;
+}
+
+.movie-carousel h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+}
+
+.movie-carousel2 {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.movie-carousel2 h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+}
+
+.movie-carousel2 h3 i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.item {
+  transition: all .5s ease-in-out;
+}
+
+.item:hover {
+  transform: scale(0.95);
+}
+
+/*------- Footer--------*/
+.footer-container {
+  height: 300px;
+}
+
+.social {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social a i {
+  font-size: 28px;
+  padding: 15px;
+  color: #aaa;
+  cursor: pointer;
+} 
+
+.social a i:hover {
+  color: #fff;
+}
+
+.info-contacts {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+}
+
+.info1, .info2, .info3 {
+  margin: 10px 80px; 
+}
+
+.info-contacts li {
+  list-style: none;
+  padding: 8px 0;
+}
+
+.info-contacts li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.info-contacts li a:hover {
+  color: #fff;
+}
+
+.info-contacts:hover {
+  color: #fff;
+}
+
+.dev {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #aaa;
+}
+
+.dev a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #aaa;
+  font-size: 22px;
+}
+
+.dev a:hover {
+  color: #fff;
+}

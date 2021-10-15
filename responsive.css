@@ -1,0 +1,108 @@
+@media screen and (max-width: 480px) {
+   
+  body {
+    background: #000;
+  }
+
+  /*-------- header  --------*/
+  header {
+    height: 120px;
+    display: flex;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  header .container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+  }
+
+  header nav {
+    margin-left: 0;
+  }
+
+   /*-------- Video Container  --------*/
+  .video-container {
+    top: 100px;
+    width: 100vw;
+  }
+
+  /*-------- Volume Slider  --------*/
+  .slider {
+    position: relative;
+    top: 20px;
+  }
+
+  .slider input[type="range"] {
+    width: 40px;
+  }
+
+  .title {
+    margin-top: 12%;
+    font-size: 26px;
+  }
+  
+  /*-------- Video  --------*/
+  .main-movie .description {
+    display: none;
+  }
+
+  /*-------- Buttons  --------*/
+  .button {
+    padding: 6px;
+    margin-top: 15px;
+    width: 90px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .info {
+    display: none;
+  }
+
+  /*-------- Movie Carousel  --------*/
+
+  .movie-box {
+    height: 300px;
+    width: auto;
+  }
+  
+  .movie-carousel {
+    margin-top: 70px;
+  }
+
+  .movie-carousel h3 {
+    font-size: 16px;
+  }
+
+  .movie-carousel2 h3 {
+    font-size: 16px;
+  }
+
+  /*-------- Footer --------*/
+
+  .footer-container {
+    height: 350px;
+  }
+
+  .social {
+    margin-top: 30px;
+  }
+  
+  .info1, .info2, .info3 {
+    margin: 30px 24px; 
+  }
+
+  .info-contacts li a {
+    font-size: 12px;
+  }
+
+  .dev h5 {
+    font-size: 12px;
+  }
+  
+}

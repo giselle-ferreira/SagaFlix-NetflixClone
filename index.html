@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Responsive Style -->
+    <link rel="stylesheet" href="responsive.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="/owl-css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/owl-css/owl.theme.default.min.css" />
+
+    <title>SagaFlix</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img
+            src="https://fontmeme.com/permalink/211015/1492105839221b5c906ec168ec55629b.png"
+          />
+        </div>
+        <!-- Menu -->
+        <nav>
+          <a href="#">Início</a>
+          <a href="#">Séries</a>
+          <a href="#">Filmes</a>
+          <a href="#">Minha Lista</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Movie-->
+    <main>
+      <div class="main-movie">
+        <div class="container">
+          <video class="video-container" id="video" autoplay loop>
+            <source
+              src="assets/video/ascensao-skywalker.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          <!-- Volume Control-->
+            <div class="slider">
+              <li><i class="fas fa-volume-up"></i><input id="volume" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input></li>
+              </ul>
+            </div>  
+          <ul>
+
+          <!-- Movie Title and Description -->
+          <h3 class="title">A ASCENSÃO SKYWALKER</h3>
+          <p class="description">
+            Com o retorno do Imperador Palpatine, a Resistência toma a frente da
+            batalha. Treinando para ser uma completa Jedi, Rey se encontra em
+            conflito com passado e futuro, e teme pelas respostas que pode
+            conseguir com Kylo Ren.
+          </p>
+
+          <!-- Buttons -->
+          <div class="buttons">
+            <button role="button" class="button watch">
+              <i class="fas fa-play"></i>Assistir
+            </button>
+            <button role="button" class="button info">
+              <i class="fas fa-info-circle"></i>Mais informações
+            </button>
+           </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Movies Carousel 1 -->
+    <div class="movie-carousel">
+      <h3>Star Wars</h3>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="movie-box" src="assets/sw1.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/sw2.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/sw3.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/sw4.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/sw5.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/sw6.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/sw7.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/sw8.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/sw9.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/sw10.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Movies Carousel 2 -->
+    <div class="movie-carousel2">
+      <h3>O Senhor dos Anéis</h3>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="movie-box" src="assets/sa1.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/sa2.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/sa3.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/sa-h1.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/sa-h2.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/sa-h3.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Movies Carousel 3 -->
+    <div class="movie-carousel2">
+      <h3>Universo Marvel</h3>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="movie-box" src="assets/marvel1.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/marvel2.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/marvel3.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/marvel4.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/marvel5.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/marvel6.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/marvel7.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/marvel8.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/marvel9.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/marvel10.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/marvel11.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/marvel12.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/marvel13.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Movies Carousel 4 -->
+    <div class="movie-carousel2">
+      <h3>Harry Potter</h3>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="movie-box" src="assets/hp1.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/hp2.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/hp3.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/hp4.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/hp5.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/hp6.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/hp7.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/hp-af1.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/hp-af2.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Movies Carousel 5 -->
+    <div class="movie-carousel2">
+      <h3>Mais Sagas<i class="fas fa-chevron-right"></i></h3>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="movie-box" src="assets/jogosvorazes.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/mazerunner.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/bourne.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/madmax.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/voltafuturo.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/divergente.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/chefao.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/indiana.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/millennium.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/missaoimpossivel.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="movie-box" src="assets/xmen12.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-container">
+      <footer class="footer">
+        <div class="social">
+          <a src=""><i class="fab fa-facebook"></i></a>
+          <a src=""><i class="fab fa-instagram"></i></a>
+          <a src=""><i class="fab fa-twitter"></i></a>
+          <a src=""><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="info-contacts">
+          <div class="info1">
+            <ul>
+              <li><a href="#">Idioma e legendas</a></li>
+              <li><a href="#">Privacidade</a></li>
+              <li><a href="#">Entre em contato</a></li>
+            </ul>
+          </div>
+
+          <div class="info2">
+            <ul>
+              <li><a href="#">Termos de uso</a></li>
+              <li><a href="#">Avisos legais</a></li>
+              <li><a href="#">Central de Ajuda</a></li>
+            </ul>
+          </div>
+
+          <div class="info3">
+            <ul>
+              <li><a href="#">Carreiras</a></li>
+              <li><a href="#">Imprensa</a></li>
+              <li><a href="#">Termos de Uso</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="dev">
+          <h5>
+            Desenvolvido por Giselle Ferreira para o Bootcamp da Digital Innovation One.
+            <a href="https://github.com/giselle-ferreira" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </h5>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="owl-js/jquery.min.js"></script>
+    <script src="owl-js/owl.carousel.min.js"></script>
+    <script src="owl-js/setup.js"></script>
+
+    <!-- Video Volume -->
+    <script src="volume.js"></script>
+  </body>
+</html>
