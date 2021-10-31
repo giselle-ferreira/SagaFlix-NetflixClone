@@ -16,7 +16,7 @@
 <br>
 
 >## Website 💻
-+ [SagaFlix](https://todolist-vjs.netlify.app/)
++ [SagaFlix](https://sagaflix-netfixclone.netlify.app/)
 
 <br>
 
